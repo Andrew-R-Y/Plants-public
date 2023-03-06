@@ -27,16 +27,16 @@
                 <a href="#" class="changecolor">Home</a>
               </li>
               <li class="next-navbar-item">
-                <a href="#" class="changecolor">About us</a>
+                <a href="#about" class="changecolor">About us</a>
               </li>
               <li class="next-navbar-item">
-                <a href="#" class="changecolor">Service</a>
+                <a href="#service" class="changecolor">Service</a>
               </li>
               <li class="next-navbar-item">
-                <a href="#" class="changecolor">Price</a>
+                <a href="#prices" class="changecolor">Price</a>
               </li>
               <li class="next-navbar-item">
-                <a href="#" class="changecolor">Contacts</a>
+                <a href="#contacts" class="changecolor">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -69,7 +69,7 @@
       <section class="about">
         <div class="about-content">
           <div class="left-content">
-            <h2>
+            <h2 id="about">
               We are
               <span class="orange">professional experienced</span> gardeners
             </h2>
@@ -95,7 +95,7 @@
       <section class="service">
         <div class="service-content">
           <div class="service-top">
-            <h2 class="service-p">Service and our projects</h2>
+            <h2 id="service" class="service-p">Service and our projects</h2>
             <button class="btn-service-first">Gardens</button>
             <button class="btn-service">Lawn</button>
             <button class="btn-service">Planting</button>
@@ -166,9 +166,35 @@
       <section class="prices">
         <div class="prices-wrapper">
           <div class="price-block">
-            <h2 class="price-text">Prices</h2>
+            <h2 id="prices" class="price-text">Prices</h2>
+            <div class="prices-plans">
+              <div class="price-basics">
+                <h3 class="price-plan">Basics</h3>
+                <img
+                  class="accordion-img"
+                  src="./img/svg/accordion_btn.svg"
+                  alt="accordion_btn"
+                />
+              </div>
+              <div class="price-standard">
+                <h3 class="price-plan">Standard</h3>
+                <img
+                  class="accordion-img"
+                  src="./img/svg/accordion_btn.svg"
+                  alt="accordion_btn"
+                />
+              </div>
+              <div class="price-pro-care">
+                <h3 class="price-plan">Pro care</h3>
+                <img
+                  class="accordion-img"
+                  src="./img/svg/accordion_btn.svg"
+                  alt="accordion_btn"
+                />
+              </div>
+            </div>
           </div>
-          <div class="contact-us-block">
+          <div class="best-gardeners-block">
             <p class="contact-us-text">
               Our best <span class="green">gardeners</span> are ready to help
               you
@@ -192,13 +218,47 @@
             alt="contact woman"
             class="image-contact"
           />
+          <div class="contact-us-maintext">
+            <h2 id="contacts">Contact us</h2>
+          </div>
+          <div class="city-button">
+            <p>City</p>
+            <img
+              class="image-city"
+              src="./img/svg/accordion_city_btn.svg"
+              alt="accordion-city-btn"
+            />
+          </div>
         </div>
       </section>
       <!--Contact-us end-->
     </main>
 
     <!--Footer start-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="left-block">
+          <div class="copyright">&copy</div>
+          <div class="year">2023</div>
+          <div class="github">
+            <a class="github-ref" href="https://github.com/Andrew-R-Y"
+              >github</a
+            >
+          </div>
+        </div>
+        <div class="middle-block">
+          <a class="rs" href="https://rs.school/js-stage0/"
+            >Rolling Scopes School</a
+          >
+        </div>
+        <div class="right-block">
+          <img src="./img/svg/instagram_logo.svg" alt="instagram logo" />
+          <img src="./img/svg/facebook_logo.svg" alt="facebook logo" />
+          <img src="./img/svg/twitter_logo.svg" alt="twitter logo" />
+          <img src="./img/svg/pinterest_logo.svg" alt="pinterest logo" />
+        </div>
+      </div>
+    </footer>
     <!--Footer end-->
   </body>
 </html>

@@ -48,25 +48,28 @@
   color: #636060;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Header styles start*/
 .header-wrapper {
   background-color: #edf2ec;
   margin: auto 0;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 }
 .header__logo {
   display: inline-block;
   margin-left: 2px;
-  margin-top: 2px;
 }
 .header__logo__text {
   color: #000000;
   display: inline-block;
   font: 700 16px 'Inika';
-  margin-top: 10px;
   margin-left: -4px;
-  padding-bottom: 1px;
 }
 .header__nav {
   display: inline-block;
@@ -221,7 +224,7 @@ p.about-text {
 
 /* Service styles start */
 .service {
-  height: 1262px;
+  height: 1261px;
   background-color: #edf2ec;
   padding-top: 39px;
 }
@@ -314,19 +317,21 @@ p.about-text {
 
 /* Prices styles start */
 .prices {
-  height: 518px;
+  height: 520px;
   background-color: #ffffff;
 }
 .prices-wrapper {
+  box-sizing: border-box;
   width: 1222px;
   height: 405px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
 }
 .price-block {
   width: 332px;
   height: 391px;
-  border: 1px solid violet;
   display: inline-block;
   vertical-align: top;
 }
@@ -334,14 +339,52 @@ p.about-text {
   font: 700 40px 'Inter', sans-serif;
   line-height: 48px;
   color: #000000;
+  margin-bottom: 6px;
+  margin-left: 1px;
 }
-/* Prices styles end */
 
-/* Contact-us styles start */
-.contact-us-block {
+.prices-plans {
+  width: 332px;
+  height: 280px;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.price-basics,
+.price-standard,
+.price-pro-care {
+  width: 250px;
+  height: 50px;
+  background-color: #edf2ec;
+  border-radius: 20px;
+}
+.price-basics:hover,
+.price-standard:hover,
+.price-pro-care:hover {
+  background-color: #e06733;
+  cursor: pointer;
+  color: white;
+}
+.price-plan {
+  width: 100px;
+  height: 18px;
+  margin-top: 16px;
+  margin-left: 40px;
+  margin-right: 50px;
+  font: 700 20px 'Inter';
+  line-height: 20px;
+  display: inline-block;
+}
+.accordion-img {
+  display: inline-block;
+  align-items: end;
+  margin-top: 17px;
+}
+.best-gardeners-block {
   width: 452px;
-  height: 103px;
-  float: right;
   vertical-align: top;
 }
 .contact-us-text {
@@ -349,10 +392,11 @@ p.about-text {
   line-height: 50px;
   text-align: right;
   color: #000000;
+  margin-top: 1px;
 }
 .contact-us-button {
   float: right;
-  margin-top: 38px;
+  margin-top: 40px;
   border: 1px solid #e06733;
   width: 162px;
   height: 50px;
@@ -360,14 +404,19 @@ p.about-text {
   font: 700 20px 'Inika';
   color: #e06733;
   line-height: 26px;
+  background-color: white;
 }
 .small-leafs {
   display: inline-block;
-  margin-top: 39px;
-  margin-left: 290px;
-  width: 152px;
-  height: 175px;
+  margin-top: 36px;
+  margin-left: 300px;
+  width: 160px;
+  height: 184px;
 }
+/* Prices styles end */
+
+/* Contact-us styles start */
+
 .contact-us-section {
   height: 550px;
   background-color: #edf2ec;
@@ -376,19 +425,101 @@ p.about-text {
   margin-top: 53px;
   width: 1222px;
   height: 500px;
-  border: 1px solid black;
   margin: 0 auto;
 }
 .image-contact {
-  margin-top: 52px;
+  margin-top: 53px;
+  margin-right: 110px;
   width: 400px;
   height: 497px;
+  margin-left: 1px;
 }
-.content {
-  max-width: 1440px;
-  margin: auto;
+.contact-us-maintext {
+  color: #499a18;
+  font: 700 40px 'Inika';
+  line-height: 52px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 60px;
+}
+.contact-us-maintext h2 {
+  font-weight: 700;
+  width: 200px;
+}
+.city-button {
+  display: inline-block;
+  width: 449px;
+  height: 50px;
+  background-color: #d6e7d2;
+  vertical-align: top;
+  margin-top: 148px;
+  margin-left: 54px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  color: #717171;
+}
+
+.city-button p {
+  font: 400 20px 'Inter';
+  line-height: 40px;
+  margin-right: 170px;
+  margin-left: 20px;
+  display: inline-block;
+  width: 204px;
+  letter-spacing: 1px;
+}
+.city-button:hover {
+  background-color: #e06733;
+  color: white;
+  cursor: pointer;
+}
+.image-city {
+  margin-top: 17px;
 }
 /* Contact-us styles end */
 
+/* Foooter styles start */
 .footer {
+  height: 130px;
+  background-color: white;
 }
+.footer-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1222px;
+  height: 130px;
+}
+.left-block,
+.middle-block {
+  height: 50px;
+  align-items: center;
+  font: 400 20px 'Inter';
+  line-height: 50px;
+}
+.github-ref {
+  font: 400 20px 'Inter';
+  line-height: 50px;
+}
+.middle-block {
+  padding-left: 18px;
+}
+.rs {
+  font: 400 20px 'Inter';
+  line-height: 50px;
+}
+.left-block {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-block {
+  width: 188px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Foooter styles end */
